@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="live_feed=true" audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="0" type="collection">
+    <element attributes="live_feed=true" audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="209" type="collection">
         <element label="Città" max_length="60" name="citta" type="string"/>
+        <element default="20" label="Cod_Dipendente" max_length="40" name="cod_dipendente" type="string"/>
+        <element default="15" label="Cod_Progetto" max_length="40" name="cod_progetto" type="string"/>
+        <element default="20" label="Cod_Ufficio" max_length="40" name="cod_ufficio" type="string"/>
         <element label="Cognome" max_length="60" name="cognome" type="string"/>
+        <element label="Data_Fine_Task" max_length="800" name="data_fine_task" type="data_structure"/>
+        <element default="50" label="Dipendente" max_length="40" name="dipendente" type="string"/>
+        <element default="15" label="ID_Task" max_length="40" name="id_task" type="string"/>
+        <element default="4" label="Iniziali" max_length="40" name="iniziali" type="string"/>
+        <element default="50" label="Livello_Istruzione" max_length="40" name="livello_istruzione" type="string"/>
         <element label="must_have_by" max_length="40" name="must_have_by" type="string"/>
         <element label="Nome" max_length="60" name="nome" type="string"/>
-        <element label="requested_for" max_length="40" name="requested_for" type="string"/>
+        <element default="15" label="Num_Task" max_length="40" name="num_task" type="integer"/>
+        <element default="20" label="Num_Telefono_Interno" max_length="40" name="num_telefono_interno" type="string"/>
+        <element label="Requested for" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
         <element label="requested_type" max_length="40" name="requested_type" type="string"/>
         <element label="Request type" max_length="40" name="request_type" type="string"/>
-        <element display="true" label="Telefono" max_length="10" name="telefono" type="integer"/>
+        <element default="50" label="Ruolo" max_length="40" name="ruolo" type="string"/>
+        <element default="50" display="true" label="Ruolo_in_Azienda" max_length="40" name="ruolo_in_azienda" type="string"/>
+        <element default="50" label="Sesso" max_length="40" name="sesso" type="string"/>
+        <element label="Telefono" max_length="10" name="telefono" type="integer"/>
         <element label="What needed" max_length="40" name="what_needed" type="string"/>
     </element>
 </database>
